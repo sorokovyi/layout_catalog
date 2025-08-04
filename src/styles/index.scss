@@ -1,3 +1,7 @@
+:root {
+  --card-width: 200px;
+}
+
 html {
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -89,23 +93,22 @@ body {
   padding: 50px 40px;
 
   @media (min-width: 488px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, var(--card-width));
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, var(--card-width));
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, var(--card-width));
   }
 
-  justify-items: center;
   justify-content: center;
 }
 
 .card {
-  display: grid;
+  display: block;
   grid-auto-flow: row;
   height: 408px;
   width: 200px;
