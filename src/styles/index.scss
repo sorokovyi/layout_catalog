@@ -28,11 +28,11 @@ body {
 
 .header__container {
   display: flex;
-  justify-content: space-between; /* логотип влево, меню вправо */
-  align-items: center; /* вертикальное центрирование */
-  padding: 0 50px; /* прижимаем содержимое на 50px от краёв */
-  width: 100%; /* растягиваем на всю ширину header */
-  box-sizing: border-box; /* чтобы padding учитывался в width */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .header__logo {
@@ -41,13 +41,13 @@ body {
 }
 
 .nav__list {
-  display: flex; /* в ряд */
-  list-style: none; /* убрали маркеры */
-  align-items: center; /* выровняли по вертикали */
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
 .nav__item {
-  margin-right: 20px; /* расстояние между пунктами */
+  margin-right: 20px;
 }
 
 .nav__item:last-child {
